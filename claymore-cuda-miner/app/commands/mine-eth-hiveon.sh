@@ -9,6 +9,6 @@
 # -fanmin 30;  fan min speed; does not work on linux nvidia
 # -ttli ; reduce entire mining intensity automatically if GPU temperature is above value ; stop on -tt
 
-POOL="ssl+eu-eth.hiveon.net:24443"
+POOL="eu-eth.hiveon.net:444"
 
 exec ./claymore/ethdcrminer64 -epool ${POOL} -ewal ${WALLET} -mode 1 -dbg -1 -mport -${PORT} -etha 0 -ethi ${INTENSITY} -erate 1 -r 0 -retrydelay 1 -ftime 55 -tt 1 -tstop 95 -ttli 93 -tstart 55
