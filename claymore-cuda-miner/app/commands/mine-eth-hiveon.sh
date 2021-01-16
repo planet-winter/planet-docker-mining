@@ -9,6 +9,6 @@
 # -fanmin 30;  fan min speed; does not work on linux nvidia
 # -ttli ; reduce entire mining intensity automatically if GPU temperature is above value ; stop on -tt
 
-POOL="eu-eth.hiveon.net:444"
+POOL="eu-eth.hiveon.net:4444"
 
-exec ./claymore/ethdcrminer64 -epool ${POOL} -ewal ${WALLET} -mode 1 -dbg -1 -mport -${PORT} -etha 0 -ethi ${INTENSITY} -erate 1 -r 0 -retrydelay 1 -ftime 55 -tt 1 -tstop 95 -ttli 93 -tstart 55
+exec ./claymore/ethdcrminer64 -epool ${POOL} -ewal ${WALLET}.AsteroidMiner -epsw x -mode 1 -dbg -1 -mport -${PORT} -etha 0 -ethi ${INTENSITY} -erate 1 -r 0 -retrydelay 1 -ftime 55 -tt 1 -tstop 95 -ttli 93 -tstart 55
